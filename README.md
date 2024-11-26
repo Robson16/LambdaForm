@@ -6,6 +6,19 @@ Este projeto é uma função Lambda desenvolvida em Java que processa dados de u
 
 A função Lambda recebe dados em formato JSON enviados por um formulário de contato. Ela pode ser configurada para armazenar esses dados em um serviço da AWS, como o Amazon S3 ou um banco de dados. O projeto utiliza a biblioteca AWS SDK para Java e outras dependências, como Log4j2 para logging e Lombok para simplificação do código.
 
+Utilizando S3, os dados são armazenados em formato de objetos JSON, exemplo: 
+
+```
+{
+   "id":"ee71bbec-fd97-4468-ac9f-8e19c42d20be",
+   "name":"John Doe",
+   "email":"jonhdoe@example.com",
+   "phone":"+55 (11) 99999-8888",
+   "message":"Teste. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+   "createdAt":[2024, 11, 26, 16, 33, 42, 423350508]
+}
+```
+
 ## Tecnologias Utilizadas
 
 - **Java 17**: A linguagem usada para desenvolver a função Lambda.
